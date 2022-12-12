@@ -1,0 +1,13 @@
+debug/main.o
+debug/mainwindow.o
+debug/camera.o
+debug/snimokcam.o
+debug/registrationnew.o
+debug/izmenenie.o
+debug/people.o
+debug/moc_mainwindow.o
+debug/moc_camera.o
+debug/moc_snimokcam.o
+debug/moc_registrationnew.o
+debug/moc_izmenenie.o
+debug/moc_people.o

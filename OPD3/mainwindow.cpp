@@ -43,8 +43,19 @@ MainWindow::MainWindow(QWidget *parent) :
 
 
     ui->pushButton->setStyleSheet("QPushButton{background-color: rgb(234, 237, 253); border: 0.5px solid rgb(101, 126, 253); border-radius: 8px; color: rgb(105, 127, 254); text-align: center; font: 75 20pt \"MS Shell Dlg 2\";}"
-                                  "QPushButton:hover{background-color: rgb(186, 195, 242); border: 0.5px solid rgb(101, 126, 253); border-radius: 8px; color: rgb(240, 248, 255)}");
+                                      "QPushButton:hover{background-color: rgb(186, 195, 242); border: 0.5px solid rgb(101, 126, 253); border-radius: 8px; color: rgb(240, 248, 255)}");
     ui->pushButton->setCheckable(true);
+
+
+
+    ui->pushButton_2->setCheckable(true);
+    QPalette palette_2;
+    ui->pushButton_2->setAutoFillBackground(true);
+    palette_2 = ui->pushButton_2->palette();
+    palette.setColor(QPalette::Button,QColor(82,110,166));
+    ui->pushButton_2->setPalette(palette_2);
+    ui->pushButton_2->setIcon(QIcon("C:/Users/molok/Desktop/Code/OPD3/icon.ico"));
+
 }
 
 MainWindow::~MainWindow()
@@ -86,4 +97,9 @@ void MainWindow::on_pushButton_11_clicked()
     window.setModal(true);
     window.setWindowTitle("Распознавание лиц");
     window.exec();
+}
+
+void MainWindow::on_pushButton_2_clicked()
+{
+    system("start IEXPLORE.EXE \"https://github.com/pcowTawer/OPD_OpenCV\"");
 }
